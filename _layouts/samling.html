@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article>
+  <div class="samling-header">
+    <h1>{{ page.title }}</h1>
+    <p class="meta">{{ page.dato }} &middot; Tema: {{ page.tema }}</p>
+  </div>
+
+  <div class="samling-content">
+    {{ content }}
+  </div>
+
+  <a href="{{ '/' | relative_url }}" class="back-link">&larr; Tilbage til oversigt</a>
+</article>

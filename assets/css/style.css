@@ -1,0 +1,147 @@
+/* Dysleksivenligt design */
+:root {
+  --bg: #fffdf7;
+  --text: #2d2d2d;
+  --accent: #3d6b59;
+  --light: #f0ebe3;
+  --border: #d4cfc7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Atkinson Hyperlegible", "Verdana", sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text);
+  background: var(--bg);
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Forside — samlingsliste */
+.samling-liste {
+  list-style: none;
+  padding: 0;
+}
+
+.samling-liste li {
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  background: var(--light);
+  border-radius: 8px;
+  border-left: 4px solid var(--accent);
+}
+
+.samling-liste li a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.samling-liste .meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+/* Samling-side */
+.samling-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.samling-header .meta {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.samling-content {
+  font-size: 1.15rem;
+}
+
+.samling-content blockquote {
+  border-left: 4px solid var(--accent);
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  background: var(--light);
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+}
+
+.samling-content ul, .samling-content ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.samling-content li {
+  margin-bottom: 0.5rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  background: var(--light);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Navigation */
+nav {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+nav a {
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: #888;
+}

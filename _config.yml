@@ -1,0 +1,17 @@
+title: Morgensamling
+description: Korte, kreative morgensamlinger til efterskoleelever
+baseurl: /Morgensamling
+url: https://qvisty.github.io
+
+collections:
+  samlinger:
+    output: true
+    permalink: /samlinger/:slug/
+    sort_by: dato
+
+defaults:
+  - scope:
+      path: ""
+      type: "samlinger"
+    values:
+      layout: "samling"

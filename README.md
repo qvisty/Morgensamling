@@ -2,28 +2,36 @@
 
 Korte, kreative morgensamlinger til efterskoleelever — med saerligt fokus paa ordblinde.
 
-## Koncept
+## Om
 
-En simpel webapp der giver laerere klar-til-brug morgensamlinger, tilpasset elever med ordblindhed:
-- Korte, engagerende formater (3-5 min)
-- Dysleksivenligt design (klar typografi, korte saetninger, visuelle elementer)
-- Dagligt friskt indhold via AI-generering
-- Emner: mindfulness, nyheder, kreative oevelser, diskussion, dagens citat
+Et simpelt statisk site med daglige morgensamlinger. Hver morgensamling har sin egen side. Forsiden giver overblik over alle samlinger.
 
-## Maalgruppe
+- Hostet gratis paa GitHub Pages
+- Dysleksivenligt design (klar typografi, hoej kontrast)
+- Bygget med Jekyll
 
-Laerere og paedagoger paa efterskoler (primaert), folkeskoler og specialskoler (sekundaert).
+## Brug
 
-## Forretningsmodel
+Besøg: https://qvisty.github.io/Morgensamling/
 
-Freemium:
-- Gratis: 1 morgensamling/dag (standard)
-- Pro: Fuld adgang, tilpasning, arkiv, egne temaer — 49 kr/md per laerer eller 299 kr/md per skole
+## Tilfoej ny morgensamling
 
-## Tech Stack
+Opret en ny `.md`-fil i `_samlinger/` mappen:
 
-Se tech-stack beslutning i issues.
+```markdown
+---
+layout: samling
+title: "Titel paa samlingen"
+dato: 2026-04-16
+tema: mindfulness
+---
 
-## Status
+Indhold her...
+```
 
-Projekt opstartet. Afventer prioritering efter MitCV og Emmerske_Side.
+## Lokal udvikling
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
